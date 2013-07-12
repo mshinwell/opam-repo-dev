@@ -1,2 +1,1 @@
-OCaml 4.01 with support for profiling of allocations in
-native code on x86-64.
+Allocation profiling for x86-64 native code.

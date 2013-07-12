@@ -1,2 +1,1 @@
-OCaml 4.01 with support for interleaving of OCaml and assembly
-code in "perf annotate" on x86-64 Linux.
+Allows "perf annotate" on x86-64 Linux to display OCaml source.
