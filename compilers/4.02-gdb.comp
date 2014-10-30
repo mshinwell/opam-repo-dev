@@ -1,5 +1,5 @@
 opam-version: "1"
-version: "4.02.1"
+version: "4.02-gdb"
 src: "https://github.com/mshinwell/ocaml/tarball/4.02-gdb"
 build: [
   ["./configure" "-prefix" "%{prefix}%"]
