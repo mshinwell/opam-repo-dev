@@ -6,7 +6,10 @@ dev-repo: "https://github.com/mshinwell/gdb.git"
 bug-reports: "https://github.com/mshinwell/gdb/issues"
 license: "GPLv3"
 build: [
-  ["./configure" "--prefix=%{prefix}%"]
+  ["./configure" "--prefix=%{prefix}%/libexec/gdb-ocaml.%{version}%"]
   ["make"]
 ]
-install: ["make" "install"]
+install: [
+  ["make" "install"]
+  ["./install-gdb-ocaml.sh %{prefix}%/bin %{prefix}%/libexec/gdb-ocaml.%{version}%"]
+]
