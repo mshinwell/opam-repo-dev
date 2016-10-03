@@ -1,0 +1,9 @@
+opam-version: "1.2"
+maintainer: "mshinwell@gmail.com"
+authors: ["Mark Shinwell" "Frederic Bour"]
+homepage: "https://github.com/mshinwell/libmonda"
+dev-repo: "https://github.com/mshinwell/libmonda.git"
+bug-reports: "https://github.com/mshinwell/libmonda/issues"
+license: "MIT"
+build: [make]
+available: [ocaml-version >= "4.05.0"]
