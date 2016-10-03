@@ -7,7 +7,10 @@ dev-repo: "https://github.com/mshinwell/libmonda.git"
 bug-reports: "https://github.com/mshinwell/libmonda/issues"
 license: "MIT"
 build: ["make"]
-install: ["cp" "libmonda_gdb.so" "%{prefix}%"]
+install: [
+  ["mkdir" "-p" "%{prefix}%/lib/libmonda.%{version}%"]
+  ["cp" "libmonda_gdb.so" "%{prefix}%/lib/libmonda.%{version}%"]
+]
 remove: ["rm" "%{prefix}%/libmonda_gdb.so"]
 available: [ocaml-version >= "4.05.0"]
 depends: [gdb-ocaml]
