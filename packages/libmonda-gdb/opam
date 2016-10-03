@@ -1,3 +1,4 @@
+name: "libmonda-gdb"
 opam-version: "1.2"
 maintainer: "mshinwell@gmail.com"
 authors: ["Mark Shinwell" "Frederic Bour"]
@@ -9,3 +10,4 @@ build: [make]
 install: [cp libmonda_gdb.so %{prefix}%]
 remove: [rm %{prefix}%/libmonda_gdb.so]
 available: [ocaml-version >= "4.05.0"]
+depends: [gdb-ocaml]

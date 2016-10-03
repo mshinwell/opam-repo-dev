@@ -1,0 +1,13 @@
+name: "gdb-ocaml"
+opam-version: "1.2"
+maintainer: "mshinwell@gmail.com"
+authors: ["Mark Shinwell" "GDB authors"]
+homepage: "https://github.com/mshinwell/gdb"
+dev-repo: "https://github.com/mshinwell/gdb.git"
+bug-reports: "https://github.com/mshinwell/gdb/issues"
+license: "GPLv3"
+build: [
+  [./configure --prefix=%{prefix}%]
+  [make]
+]
+install: [make install]
