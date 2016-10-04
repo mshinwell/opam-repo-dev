@@ -11,5 +11,5 @@ build: [
 ]
 install: [
   ["make" "install"]
-  ["./install-gdb-ocaml.sh" "%{prefix}%/bin" "%{prefix}%/libexec/gdb-ocaml.%{version}%" "%{prefix}%/lib/libmonda.master%"]
+  ["./install-gdb-ocaml.sh" "%{prefix}%/bin" "%{prefix}%/libexec/gdb-ocaml.%{version}%" "%{prefix}%/lib/libmonda.master"]
 ]
