@@ -15,4 +15,4 @@ install: [
 ]
 remove: ["rm" "%{prefix}%/lib/libmonda.%{version}%/libmonda_gdb.so"]
 available: [ocaml-version >= "4.05.0"]
-depends: [gdb-ocaml { = "7.11" }]
+depends: ["gdb-ocaml" { = "7.11" }]
