@@ -1,0 +1,13 @@
+opam-version: "1"
+version: "4.05.0"
+src: "https://github.com/ocaml/ocaml/tarball/7b1ce6db0bc49fe6bd5a7d490ae7777921ea0b6d"
+build: [
+  ["./configure" "-prefix" "%{prefix}%"]
+  ["%{make}%" "world"]
+  ["%{make}%" "world.opt"]
+  ["%{make}%" "install"]
+]
+packages: ["base-unix" "base-bigarray" "base-threads" "base-raw_spacetime_lib"]
+env: [
+  [CAML_LD_LIBRARY_PATH = "%{lib}%/stublibs"]
+]
